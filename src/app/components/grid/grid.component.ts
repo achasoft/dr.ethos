@@ -17,6 +17,7 @@ import {HttpService} from '../../services/shared/http.service';
 import {CultureService} from '../../services/shared/culture.service';
 import {GridCommand} from '../../view-models/shared/grid-view-models';
 import {MaterialTranslatorService} from '../../services/shared/material-translator.service';
+import {OperationResultStatus} from '../../library/shared/enums';
 
 @Component({
   selector: 'app-grid',
@@ -134,22 +135,22 @@ export class GridComponent<T> implements OnInit, OnDestroy, AfterContentInit {
     })) as any;
     this.isLoading = false;
     this.isLoadingChange.emit(this.isLoading);
-    if (!op.success) {
+    if (op.status !== OperationResultStatus.Success) {
       // TODO: handle error;
       return;
     }
-    this.totalItems = op.totalCount;
-    this.totalPages = Math.floor(op.totalCount / op.pageSize);
+    this.totalItems = op.data.totalItems;
+    this.totalPages = op.data.totalPages;
 
-    this.dataSource = new MatTableDataSource<T>(op.data);
+    this.dataSource = new MatTableDataSource<T>(op.data.items);
 
     this.dataSource.paginator = this.paginator;
 
     this.totalItemsChange.emit(this.totalItems);
-    (op.data || []).forEach((item, index) => {
+    (op.data.items || []).forEach((item, index) => {
       item.$index = ((this.currentPage - 1) * this.pageSize) + (index + 1);
     });
-    this.rowsChange.emit(op.data);
+    this.rowsChange.emit(op.data.items);
     this.totalPagesChange.emit(this.totalPages);
 
     setTimeout(() => {
