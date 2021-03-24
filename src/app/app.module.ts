@@ -35,6 +35,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { UserEditableDialogComponent } from './components/user-editable-dialog/user-editable-dialog.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { OnlyNumberDirective } from './directives/shared/only-number.directive';
+import {CulturedDatePipe} from './pipes/shared/cultured-date.pipe';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { OnlyNumberDirective } from './directives/shared/only-number.directive';
     WaitingComponent,
     ConfirmDialogComponent,
     UserEditableDialogComponent,
-    OnlyNumberDirective
+    OnlyNumberDirective,
+    CulturedDatePipe
   ],
   imports: [
     BrowserModule,

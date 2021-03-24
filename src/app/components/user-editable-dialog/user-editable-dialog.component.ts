@@ -20,7 +20,8 @@ export class UserEditableDialogComponent implements OnInit {
   }
 
   onConfirm(): void {
-    this.dialogRef.close(true);
+    if (!this.form.valid) { return; }
+    this.dialogRef.close(this.form.value);
   }
 
   ngOnInit(): void {
@@ -38,7 +39,7 @@ export class UserEditableDialogComponent implements OnInit {
         Validators.minLength(10),
         Validators.maxLength(15),
       ]),
-      birth_date: new FormControl(this.data ? this.data.birth_date : '', [
+      birth_date: new FormControl(this.data ? new Date(this.data.birth_date) : '', [
         Validators.required
       ]),
     });

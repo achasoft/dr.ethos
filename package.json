@@ -23,6 +23,7 @@
     "@angular/router": "~11.2.6",
     "@angular/service-worker": "~11.2.6",
     "device-uuid": "^1.0.4",
+    "moment": "^2.29.1",
     "ngx-device-detector": "^2.0.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

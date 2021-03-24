@@ -1,6 +1,6 @@
 <h1 mat-dialog-title>{{ (data ? 'EDIT' : 'CREATE') | translate}}</h1>
 <div mat-dialog-content>
-  <form #editableForm [formGroup]="form" (ngSubmit)="onConfirm()" autocomplete="off">
+  <form [formGroup]="form" autocomplete="off">
     <p>
       <mat-form-field>
         <input autocomplete="off"
@@ -47,7 +47,7 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onCancel()">{{ 'CANCEL' | translate}}</button>
-  <button mat-button color="primary" (click)="editableForm.submit()" cdkFocusInitial>
+  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>
     {{ (data ? 'EDIT' : 'CREATE') | translate}}
   </button>
 </div>

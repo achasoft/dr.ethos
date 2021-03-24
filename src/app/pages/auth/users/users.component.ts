@@ -107,6 +107,7 @@ export class UsersComponent implements OnInit, AfterViewInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      debugger;
       if (result) {
         this.usersData.data.unshift(result);
       }
