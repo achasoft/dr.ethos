@@ -2,5 +2,12 @@
   "LOGIN": "oturum aç",
   "USERNAME": "Kullanıcı adı",
   "PASSWORD": "parola",
-  "HEADER_MENU": "buraya tıklayın"
+  "HEADER_MENU": "buraya tıklayın",
+  "LOGOUT": "çıkış Yap",
+  "PAGINATOR_FIRST": "ilk",
+  "PAGINATOR_LAST": "آخرین",
+  "PAGINATOR_NEXT": "son",
+  "PAGINATOR_OF": "{0} - {1} / {2} gösteriliyor",
+  "PAGINATOR_PER_PAGE": "Sayfa başına",
+  "PAGINATOR_PREV": "Önceki"
 }

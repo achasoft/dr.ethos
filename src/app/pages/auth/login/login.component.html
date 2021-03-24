@@ -9,7 +9,7 @@
                    type="text"
                    matInput
                    formControlName="username"
-                   [disabled]="waiting"
+                   [attr.disabled]="waiting"
                    [placeholder]="'USERNAME' | translate">
           </mat-form-field>
         </p>
@@ -17,11 +17,11 @@
         <p>
           <mat-form-field>
             <input autocomplete="off"
-              type="password"
-              matInput
-              formControlName="password"
-              [disabled]="waiting"
-              [placeholder]="'PASSWORD' | translate">
+                   type="password"
+                   matInput
+                   formControlName="password"
+                   [attr.disabled]="waiting"
+                   [placeholder]="'PASSWORD' | translate">
           </mat-form-field>
         </p>
 
@@ -30,7 +30,7 @@
         </p>
 
         <div class="button">
-          <button [disabled]="waiting" type="submit" mat-button>{{ 'LOGIN' | translate }}</button>
+          <button [attr.disabled]="waiting" type="submit" mat-button>{{ 'LOGIN' | translate }}</button>
         </div>
 
       </form>

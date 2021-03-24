@@ -19,248 +19,254 @@
     "errors": []
   },
   "users": {
-    "data": [
-      {
-        "id": 1,
-        "first_name": "Anni",
-        "last_name": "Sparke",
-        "email": "asparke0@chicagotribune.com",
-        "gender": "Bigender",
-        "birth_date": "1987/02/19"
-      },
-      {
-        "id": 2,
-        "first_name": "Mariquilla",
-        "last_name": "Abrahmovici",
-        "email": "mabrahmovici1@list-manage.com",
-        "gender": "Agender",
-        "birth_date": "1987/01/10"
-      },
-      {
-        "id": 3,
-        "first_name": "Donaugh",
-        "last_name": "Frome",
-        "email": "dfrome2@cyberchimps.com",
-        "gender": "Genderfluid",
-        "birth_date": "1998/01/05"
-      },
-      {
-        "id": 4,
-        "first_name": "Artus",
-        "last_name": "Cona",
-        "email": "acona3@soup.io",
-        "gender": "Polygender",
-        "birth_date": "1985/05/27"
-      },
-      {
-        "id": 5,
-        "first_name": "Abagael",
-        "last_name": "Kerkham",
-        "email": "akerkham4@photobucket.com",
-        "gender": "Polygender",
-        "birth_date": "1983/08/30"
-      },
-      {
-        "id": 6,
-        "first_name": "Udale",
-        "last_name": "Andrasch",
-        "email": "uandrasch5@delicious.com",
-        "gender": "Female",
-        "birth_date": "2008/11/29"
-      },
-      {
-        "id": 7,
-        "first_name": "Jacquette",
-        "last_name": "Hasty",
-        "email": "jhasty6@ted.com",
-        "gender": "Bigender",
-        "birth_date": "2003/04/10"
-      },
-      {
-        "id": 8,
-        "first_name": "Fee",
-        "last_name": "Loudwell",
-        "email": "floudwell7@loc.gov",
-        "gender": "Non-binary",
-        "birth_date": "1990/03/17"
-      },
-      {
-        "id": 9,
-        "first_name": "Julie",
-        "last_name": "Pirdue",
-        "email": "jpirdue8@microsoft.com",
-        "gender": "Genderfluid",
-        "birth_date": "1996/01/07"
-      },
-      {
-        "id": 10,
-        "first_name": "Rois",
-        "last_name": "Pllu",
-        "email": "rpllu9@prnewswire.com",
-        "gender": "Male",
-        "birth_date": "1987/08/04"
-      },
-      {
-        "id": 11,
-        "first_name": "Dallas",
-        "last_name": "Norvill",
-        "email": "dnorvilla@mozilla.com",
-        "gender": "Agender",
-        "birth_date": "1988/02/05"
-      },
-      {
-        "id": 12,
-        "first_name": "Farah",
-        "last_name": "Pawnsford",
-        "email": "fpawnsfordb@google.co.jp",
-        "gender": "Agender",
-        "birth_date": "1994/08/15"
-      },
-      {
-        "id": 13,
-        "first_name": "Sidney",
-        "last_name": "Curragh",
-        "email": "scurraghc@livejournal.com",
-        "gender": "Agender",
-        "birth_date": "1993/01/03"
-      },
-      {
-        "id": 14,
-        "first_name": "Bard",
-        "last_name": "Verlinden",
-        "email": "bverlindend@artisteer.com",
-        "gender": "Female",
-        "birth_date": "2012/07/22"
-      },
-      {
-        "id": 15,
-        "first_name": "Early",
-        "last_name": "Heymes",
-        "email": "eheymese@angelfire.com",
-        "gender": "Female",
-        "birth_date": "2006/07/02"
-      },
-      {
-        "id": 16,
-        "first_name": "Lin",
-        "last_name": "Geaney",
-        "email": "lgeaneyf@spiegel.de",
-        "gender": "Polygender",
-        "birth_date": "1990/05/27"
-      },
-      {
-        "id": 17,
-        "first_name": "Baillie",
-        "last_name": "Yglesia",
-        "email": "byglesiag@indiatimes.com",
-        "gender": "Male",
-        "birth_date": "2006/09/16"
-      },
-      {
-        "id": 18,
-        "first_name": "Red",
-        "last_name": "Abbis",
-        "email": "rabbish@drupal.org",
-        "gender": "Agender",
-        "birth_date": "1984/09/25"
-      },
-      {
-        "id": 19,
-        "first_name": "Lita",
-        "last_name": "Bodell",
-        "email": "lbodelli@huffingtonpost.com",
-        "gender": "Polygender",
-        "birth_date": "2001/05/25"
-      },
-      {
-        "id": 20,
-        "first_name": "Clementine",
-        "last_name": "Besset",
-        "email": "cbessetj@purevolume.com",
-        "gender": "Male",
-        "birth_date": "1993/04/24"
-      },
-      {
-        "id": 21,
-        "first_name": "Dix",
-        "last_name": "Gladebeck",
-        "email": "dgladebeckk@google.it",
-        "gender": "Polygender",
-        "birth_date": "1995/06/29"
-      },
-      {
-        "id": 22,
-        "first_name": "Marleen",
-        "last_name": "Lorenzetti",
-        "email": "mlorenzettil@cocolog-nifty.com",
-        "gender": "Female",
-        "birth_date": "1999/10/16"
-      },
-      {
-        "id": 23,
-        "first_name": "Jasmine",
-        "last_name": "Gostling",
-        "email": "jgostlingm@behance.net",
-        "gender": "Female",
-        "birth_date": "1985/05/13"
-      },
-      {
-        "id": 24,
-        "first_name": "Adelaida",
-        "last_name": "Orrill",
-        "email": "aorrilln@yahoo.com",
-        "gender": "Genderqueer",
-        "birth_date": "1994/03/05"
-      },
-      {
-        "id": 25,
-        "first_name": "Corissa",
-        "last_name": "Corkhill",
-        "email": "ccorkhillo@fotki.com",
-        "gender": "Genderqueer",
-        "birth_date": "2001/05/03"
-      },
-      {
-        "id": 26,
-        "first_name": "Joelie",
-        "last_name": "Battams",
-        "email": "jbattamsp@bbc.co.uk",
-        "gender": "Agender",
-        "birth_date": "2012/02/06"
-      },
-      {
-        "id": 27,
-        "first_name": "Nelson",
-        "last_name": "Crissil",
-        "email": "ncrissilq@shareasale.com",
-        "gender": "Female",
-        "birth_date": "2009/02/20"
-      },
-      {
-        "id": 28,
-        "first_name": "Michelina",
-        "last_name": "Amps",
-        "email": "mampsr@soundcloud.com",
-        "gender": "Male",
-        "birth_date": "2013/09/28"
-      },
-      {
-        "id": 29,
-        "first_name": "Elmo",
-        "last_name": "Dight",
-        "email": "edights@go.com",
-        "gender": "Genderfluid",
-        "birth_date": "1984/05/10"
-      },
-      {
-        "id": 30,
-        "first_name": "Aylmar",
-        "last_name": "Dole",
-        "email": "adolet@oracle.com",
-        "gender": "Genderqueer",
-        "birth_date": "2012/08/05"
-      }
-    ],
+    "data": {
+      "totalPages": 3,
+      "totalItems": 30,
+      "page": 1,
+      "pageSize": 10,
+      "items": [
+        {
+          "id": 1,
+          "first_name": "Anni",
+          "last_name": "Sparke",
+          "email": "asparke0@chicagotribune.com",
+          "gender": "Bigender",
+          "birth_date": "1987/02/19"
+        },
+        {
+          "id": 2,
+          "first_name": "Mariquilla",
+          "last_name": "Abrahmovici",
+          "email": "mabrahmovici1@list-manage.com",
+          "gender": "Agender",
+          "birth_date": "1987/01/10"
+        },
+        {
+          "id": 3,
+          "first_name": "Donaugh",
+          "last_name": "Frome",
+          "email": "dfrome2@cyberchimps.com",
+          "gender": "Genderfluid",
+          "birth_date": "1998/01/05"
+        },
+        {
+          "id": 4,
+          "first_name": "Artus",
+          "last_name": "Cona",
+          "email": "acona3@soup.io",
+          "gender": "Polygender",
+          "birth_date": "1985/05/27"
+        },
+        {
+          "id": 5,
+          "first_name": "Abagael",
+          "last_name": "Kerkham",
+          "email": "akerkham4@photobucket.com",
+          "gender": "Polygender",
+          "birth_date": "1983/08/30"
+        },
+        {
+          "id": 6,
+          "first_name": "Udale",
+          "last_name": "Andrasch",
+          "email": "uandrasch5@delicious.com",
+          "gender": "Female",
+          "birth_date": "2008/11/29"
+        },
+        {
+          "id": 7,
+          "first_name": "Jacquette",
+          "last_name": "Hasty",
+          "email": "jhasty6@ted.com",
+          "gender": "Bigender",
+          "birth_date": "2003/04/10"
+        },
+        {
+          "id": 8,
+          "first_name": "Fee",
+          "last_name": "Loudwell",
+          "email": "floudwell7@loc.gov",
+          "gender": "Non-binary",
+          "birth_date": "1990/03/17"
+        },
+        {
+          "id": 9,
+          "first_name": "Julie",
+          "last_name": "Pirdue",
+          "email": "jpirdue8@microsoft.com",
+          "gender": "Genderfluid",
+          "birth_date": "1996/01/07"
+        },
+        {
+          "id": 10,
+          "first_name": "Rois",
+          "last_name": "Pllu",
+          "email": "rpllu9@prnewswire.com",
+          "gender": "Male",
+          "birth_date": "1987/08/04"
+        },
+        {
+          "id": 11,
+          "first_name": "Dallas",
+          "last_name": "Norvill",
+          "email": "dnorvilla@mozilla.com",
+          "gender": "Agender",
+          "birth_date": "1988/02/05"
+        },
+        {
+          "id": 12,
+          "first_name": "Farah",
+          "last_name": "Pawnsford",
+          "email": "fpawnsfordb@google.co.jp",
+          "gender": "Agender",
+          "birth_date": "1994/08/15"
+        },
+        {
+          "id": 13,
+          "first_name": "Sidney",
+          "last_name": "Curragh",
+          "email": "scurraghc@livejournal.com",
+          "gender": "Agender",
+          "birth_date": "1993/01/03"
+        },
+        {
+          "id": 14,
+          "first_name": "Bard",
+          "last_name": "Verlinden",
+          "email": "bverlindend@artisteer.com",
+          "gender": "Female",
+          "birth_date": "2012/07/22"
+        },
+        {
+          "id": 15,
+          "first_name": "Early",
+          "last_name": "Heymes",
+          "email": "eheymese@angelfire.com",
+          "gender": "Female",
+          "birth_date": "2006/07/02"
+        },
+        {
+          "id": 16,
+          "first_name": "Lin",
+          "last_name": "Geaney",
+          "email": "lgeaneyf@spiegel.de",
+          "gender": "Polygender",
+          "birth_date": "1990/05/27"
+        },
+        {
+          "id": 17,
+          "first_name": "Baillie",
+          "last_name": "Yglesia",
+          "email": "byglesiag@indiatimes.com",
+          "gender": "Male",
+          "birth_date": "2006/09/16"
+        },
+        {
+          "id": 18,
+          "first_name": "Red",
+          "last_name": "Abbis",
+          "email": "rabbish@drupal.org",
+          "gender": "Agender",
+          "birth_date": "1984/09/25"
+        },
+        {
+          "id": 19,
+          "first_name": "Lita",
+          "last_name": "Bodell",
+          "email": "lbodelli@huffingtonpost.com",
+          "gender": "Polygender",
+          "birth_date": "2001/05/25"
+        },
+        {
+          "id": 20,
+          "first_name": "Clementine",
+          "last_name": "Besset",
+          "email": "cbessetj@purevolume.com",
+          "gender": "Male",
+          "birth_date": "1993/04/24"
+        },
+        {
+          "id": 21,
+          "first_name": "Dix",
+          "last_name": "Gladebeck",
+          "email": "dgladebeckk@google.it",
+          "gender": "Polygender",
+          "birth_date": "1995/06/29"
+        },
+        {
+          "id": 22,
+          "first_name": "Marleen",
+          "last_name": "Lorenzetti",
+          "email": "mlorenzettil@cocolog-nifty.com",
+          "gender": "Female",
+          "birth_date": "1999/10/16"
+        },
+        {
+          "id": 23,
+          "first_name": "Jasmine",
+          "last_name": "Gostling",
+          "email": "jgostlingm@behance.net",
+          "gender": "Female",
+          "birth_date": "1985/05/13"
+        },
+        {
+          "id": 24,
+          "first_name": "Adelaida",
+          "last_name": "Orrill",
+          "email": "aorrilln@yahoo.com",
+          "gender": "Genderqueer",
+          "birth_date": "1994/03/05"
+        },
+        {
+          "id": 25,
+          "first_name": "Corissa",
+          "last_name": "Corkhill",
+          "email": "ccorkhillo@fotki.com",
+          "gender": "Genderqueer",
+          "birth_date": "2001/05/03"
+        },
+        {
+          "id": 26,
+          "first_name": "Joelie",
+          "last_name": "Battams",
+          "email": "jbattamsp@bbc.co.uk",
+          "gender": "Agender",
+          "birth_date": "2012/02/06"
+        },
+        {
+          "id": 27,
+          "first_name": "Nelson",
+          "last_name": "Crissil",
+          "email": "ncrissilq@shareasale.com",
+          "gender": "Female",
+          "birth_date": "2009/02/20"
+        },
+        {
+          "id": 28,
+          "first_name": "Michelina",
+          "last_name": "Amps",
+          "email": "mampsr@soundcloud.com",
+          "gender": "Male",
+          "birth_date": "2013/09/28"
+        },
+        {
+          "id": 29,
+          "first_name": "Elmo",
+          "last_name": "Dight",
+          "email": "edights@go.com",
+          "gender": "Genderfluid",
+          "birth_date": "1984/05/10"
+        },
+        {
+          "id": 30,
+          "first_name": "Aylmar",
+          "last_name": "Dole",
+          "email": "adolet@oracle.com",
+          "gender": "Genderqueer",
+          "birth_date": "2012/08/05"
+        }
+      ]
+    },
     "status": 1,
     "errors": []
   }

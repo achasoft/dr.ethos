@@ -25,6 +25,11 @@ import {TranslatePipe} from './pipes/shared/translate.pipe';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
+import { MatMenuModule} from '@angular/material/menu';
+import { GridComponent } from './components/grid/grid.component';
+import { WaitingComponent } from './components/waiting/waiting.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ import { HeaderComponent } from './components/header/header.component';
     EnterToBrPipe,
     StringFormatPipe,
     TranslatePipe,
-    HeaderComponent
+    HeaderComponent,
+    GridComponent,
+    WaitingComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +59,9 @@ import { HeaderComponent } from './components/header/header.component';
     MatRippleModule,
     MatToolbarModule,
     MatIconModule,
+    MatMenuModule,
+    MatPaginatorModule,
+    MatTableModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [

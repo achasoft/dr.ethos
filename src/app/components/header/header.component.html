@@ -2,7 +2,12 @@
   <img src="/assets/images/logo-colored.png" alt="">
   <span>{{ identity.profile.firstName }} {{ identity.profile.lastName }}</span>
   <span class="toolbar-spacer"></span>
-  <button mat-icon-button [attr.aria-label]="'HEADER_MENU' | translate">
+  <button mat-icon-button [matMenuTriggerFor]="menu" [attr.aria-label]="'HEADER_MENU' | translate">
     <mat-icon>menu</mat-icon>
   </button>
+  <mat-menu #menu="matMenu">
+    <button (click)="logout()" mat-menu-item>
+      {{ "LOGOUT" | translate }}
+    </button>
+  </mat-menu>
 </mat-toolbar>

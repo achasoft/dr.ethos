@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable, Injector} from '@angular/core';
 import {IdentityViewModel, ProfileViewModel} from '../../view-models/auth/identity-view-model';
 import {OperationResultStatus} from '../../library/shared/enums';
 import {OperationResult} from '../../library/shared/operation-result';
 import {HttpService} from '../shared/http.service';
+import {AppInitializerProvider} from '../shared/app.initializer';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,9 @@ export class IdentityService {
   identity: IdentityViewModel;
   profile: ProfileViewModel;
 
-  constructor(private readonly httpService: HttpService) {
+  constructor(
+    private readonly httpService: HttpService,
+  ) {
     const auth = localStorage.getItem(this.STORAGE_KEY);
     this.identity = JSON.parse(auth || '{}');
   }
@@ -58,6 +61,6 @@ export class IdentityService {
     if (localStorage) {
       localStorage.removeItem(this.STORAGE_KEY);
     }
-    this.identity = { token: null, username: null, userId: null };
+    window.location.href = '/';
   }
 }

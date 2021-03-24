@@ -1,0 +1,52 @@
+.grid-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  .paginator {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+
+    .info {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding-top: 10px;
+      margin-inline-end: 10px;
+    }
+  }
+  ::ng-deep .mat-cell {
+    &.operations {
+      min-width: 150px;
+      text-align: right;
+      button {
+        border: none;
+        background: none;
+
+        i {
+          font-size: 18px;
+          color: #777;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .mat-table {
+    width: 100%;
+  }
+}
+.mat-row,
+.mat-header-row {
+  width: 450vw; //PERSONALLY I HAD 45 COLUMNS
+}
+.mat-header-row {
+  //THIS MAKES THE HEADER STICKY
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: inherit;
+}
+.table {
+  //OR WHATEVER YOU CALL THE mat-table
+  overflow: scroll;
+}

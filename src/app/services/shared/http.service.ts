@@ -4,6 +4,7 @@ import {OperationResultStatus} from '../../library/shared/enums';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {NotificationService} from './notification.service';
+import {GridResult} from '../../view-models/shared/grid-view-models';
 
 @Injectable({
   providedIn: 'root',
@@ -66,5 +67,16 @@ export class HttpService {
         resolve(OperationResult.Failed<T>(e));
       }
     });
+  }
+
+
+  grid<T>(param: any): Promise<OperationResult<GridResult<T>>> {
+    const data = {
+      pageNumber: param.pageNumber,
+      pageSize: param.pageSize,
+      ...(param.params || {}),
+      // params: param.params || {},
+    };
+    return this.mockPost<GridResult<T>>(param.backend, data);
   }
 }
