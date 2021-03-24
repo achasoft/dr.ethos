@@ -22,6 +22,9 @@ import {StringFormatPipe} from './pipes/shared/string-format.pipe';
 import {EnterToBrPipe} from './pipes/shared/enter-to-br.pipe';
 import {TruncatePipe} from './pipes/shared/truncate.pipe';
 import {TranslatePipe} from './pipes/shared/translate.pipe';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import {TranslatePipe} from './pipes/shared/translate.pipe';
     TruncatePipe,
     EnterToBrPipe,
     StringFormatPipe,
-    TranslatePipe
+    TranslatePipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,8 @@ import {TranslatePipe} from './pipes/shared/translate.pipe';
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
+    MatToolbarModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [

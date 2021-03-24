@@ -1,5 +1,6 @@
 {
   "LOGIN": "oturum aç",
   "USERNAME": "Kullanıcı adı",
-  "PASSWORD": "parola"
+  "PASSWORD": "parola",
+  "HEADER_MENU": "buraya tıklayın"
 }
