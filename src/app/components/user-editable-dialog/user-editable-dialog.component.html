@@ -1,10 +1,53 @@
 <h1 mat-dialog-title>{{ (data ? 'EDIT' : 'CREATE') | translate}}</h1>
 <div mat-dialog-content>
+  <form #editableForm [formGroup]="form" (ngSubmit)="onConfirm()" autocomplete="off">
+    <p>
+      <mat-form-field>
+        <input autocomplete="off"
+               type="text"
+               matInput
+               formControlName="first_name"
+               [placeholder]="'FIRST_NAME' | translate">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input autocomplete="off"
+               type="text"
+               matInput
+               formControlName="last_name"
+               [placeholder]="'LAST_NAME' | translate">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input autocomplete="off"
+               type="text"
+               matInput
+               [appOnlyNumber]="true"
+               formControlName="phone_number"
+               [placeholder]="'PHONE_NUMBER' | translate">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input autocomplete="off"
+               type="text"
+               matInput
+               [max]="max"
+               [matDatepicker]="picker"
+               formControlName="birth_date"
+               [placeholder]="'BIRTH_DATE' | translate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </p>
 
+  </form>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onCancel()">{{ 'CANCEL' | translate}}</button>
-  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>
+  <button mat-button color="primary" (click)="editableForm.submit()" cdkFocusInitial>
     {{ (data ? 'EDIT' : 'CREATE') | translate}}
   </button>
 </div>

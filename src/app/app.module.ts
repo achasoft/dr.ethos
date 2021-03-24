@@ -17,7 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
-import {MatRippleModule} from '@angular/material/core';
+import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
 import {StringFormatPipe} from './pipes/shared/string-format.pipe';
 import {EnterToBrPipe} from './pipes/shared/enter-to-br.pipe';
 import {TruncatePipe} from './pipes/shared/truncate.pipe';
@@ -33,6 +33,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { UserEditableDialogComponent } from './components/user-editable-dialog/user-editable-dialog.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { OnlyNumberDirective } from './directives/shared/only-number.directive';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { UserEditableDialogComponent } from './components/user-editable-dialog/u
     HeaderComponent,
     WaitingComponent,
     ConfirmDialogComponent,
-    UserEditableDialogComponent
+    UserEditableDialogComponent,
+    OnlyNumberDirective
   ],
   imports: [
     BrowserModule,
@@ -68,6 +71,8 @@ import { UserEditableDialogComponent } from './components/user-editable-dialog/u
     MatTableModule,
     MatSortModule,
     MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [

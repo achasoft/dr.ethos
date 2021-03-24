@@ -12,16 +12,7 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
   error: string | null;
   waiting: boolean;
-  form: FormGroup = new FormGroup({
-    username: new FormControl('', [
-      Validators.required,
-      Validators.minLength(3)
-    ]),
-    password: new FormControl('', [
-      Validators.required,
-      Validators.minLength(6)
-    ]),
-  });
+  form: FormGroup;
 
   constructor(
     private readonly identityService: IdentityService,
@@ -29,6 +20,16 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      username: new FormControl('', [
+        Validators.required,
+        Validators.minLength(3)
+      ]),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(6)
+      ]),
+    });
   }
 
   async submit(): Promise<void> {
