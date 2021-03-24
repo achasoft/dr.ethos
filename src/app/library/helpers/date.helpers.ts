@@ -1,0 +1,72 @@
+import {NumberHelpers} from './number.helpers';
+
+export class DateHelpers {
+  static sort(a: object, b: object, key: string): number {
+    const dateA = new Date(a[key]);
+    const dateB = new Date(b[key]);
+
+    if (dateA < dateB) {
+      return -1;
+    }
+    if (dateA > dateB) {
+      return 1;
+    }
+    return 0;
+  }
+  static copy(source: Date): Date {
+    return new Date(source.valueOf());
+  }
+  static extractDateWithoutTimeZone(obj: Date): string {
+    return `${obj.getFullYear()}-${NumberHelpers.pad(
+      obj.getMonth() + 1,
+      2
+    )}-${NumberHelpers.pad(obj.getDate(), 2)}`;
+  }
+  static addDays(source: Date, input: number): Date {
+    const date = this.copy(source);
+    date.setDate(date.getDate() + input);
+    return date;
+  }
+
+  static truncateTime(source: Date, utc: boolean = false): Date {
+    const date = this.copy(source);
+    if (utc) {
+      date.setUTCHours(0);
+      date.setUTCMinutes(0);
+      date.setUTCSeconds(0);
+      date.setUTCMilliseconds(0);
+    } else {
+      date.setHours(0);
+      date.setMinutes(0);
+      date.setSeconds(0);
+      date.setMilliseconds(0);
+    }
+    return date;
+  }
+
+  static toIsoDateWithTimeZone(source: Date): string {
+    const tzo = -source.getTimezoneOffset();
+    const dif = tzo >= 0 ? '+' : '-';
+    const pad = (num) => {
+      const norm = Math.floor(Math.abs(num));
+      return (norm < 10 ? '0' : '') + norm;
+    };
+    return (
+      source.getFullYear() +
+      '-' +
+      pad(source.getMonth() + 1) +
+      '-' +
+      pad(source.getDate()) +
+      'T' +
+      pad(source.getHours()) +
+      ':' +
+      pad(source.getMinutes()) +
+      ':' +
+      pad(source.getSeconds()) +
+      dif +
+      pad(tzo / 60) +
+      ':' +
+      pad(tzo % 60)
+    );
+  }
+}

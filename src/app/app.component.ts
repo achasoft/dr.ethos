@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {DeviceDetectorService} from 'ngx-device-detector';
+import {AppInitializerProvider} from './services/shared/app.initializer';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dr-ethos';
+  constructor(
+    private readonly device: DeviceDetectorService,
+    readonly appInitializerProvider: AppInitializerProvider,
+  ) {
+    document.body.className = `${document.body.className} ${this.device.os} ${this.device.browser}`.toLowerCase();
+  }
 }
