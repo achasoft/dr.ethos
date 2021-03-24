@@ -4,7 +4,6 @@ import {OperationResultStatus} from '../../library/shared/enums';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
 import {NotificationService} from './notification.service';
-import {GridResult} from '../../view-models/shared/grid-view-models';
 
 @Injectable({
   providedIn: 'root',
@@ -43,18 +42,15 @@ export class HttpService {
     });
   }
 
-  async mockPost<T>(
+  async mockData<T>(
     section: string,
     data?: any,
   ): Promise<OperationResult<T>> {
     return new Promise<OperationResult<T>>((resolve) => {
       try {
-        const path = environment.api_endpoint + section;
+        const path = environment.api_endpoint + section + '.json';
         this.client.get(path).subscribe(
           (op: OperationResult<T>) => {
-            if (op.status !== OperationResultStatus.Success) {
-              this.notificationService.handleRequest(op);
-            }
             resolve(op);
           },
           (err: Error) => {
@@ -67,16 +63,5 @@ export class HttpService {
         resolve(OperationResult.Failed<T>(e));
       }
     });
-  }
-
-
-  grid<T>(param: any): Promise<OperationResult<GridResult<T>>> {
-    const data = {
-      pageNumber: param.pageNumber,
-      pageSize: param.pageSize,
-      ...(param.params || {}),
-      // params: param.params || {},
-    };
-    return this.mockPost<GridResult<T>>(param.backend, data);
   }
 }

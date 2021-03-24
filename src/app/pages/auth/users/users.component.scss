@@ -1,3 +1,64 @@
 mat-card {
   margin: 20px;
 }
+.grid-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  .paginator {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+
+    .info {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding-top: 10px;
+      margin-inline-end: 10px;
+    }
+  }
+  ::ng-deep .mat-cell {
+    &.operations {
+      min-width: 150px;
+      text-align: right;
+      button {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        color: #999;
+
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .mat-table {
+    width: 100%;
+  }
+}
+.mat-row,
+.mat-header-row {
+  width: 450vw;
+}
+.mat-header-row {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: inherit;
+}
+.table {
+  overflow: scroll;
+}
+.filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    max-height: 35px;
+  }
+}

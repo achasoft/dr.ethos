@@ -1,0 +1,10 @@
+{
+  "data": {
+    "firstName": "Navid",
+    "lastName": "Kianfar",
+    "email": "nvd.kianfar@gmail.com",
+    "birthDate": "1986-06-13"
+  },
+  "status": 1,
+  "errors": []
+}

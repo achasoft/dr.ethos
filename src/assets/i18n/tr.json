@@ -5,9 +5,20 @@
   "HEADER_MENU": "buraya tıklayın",
   "LOGOUT": "çıkış Yap",
   "PAGINATOR_FIRST": "ilk",
-  "PAGINATOR_LAST": "آخرین",
-  "PAGINATOR_NEXT": "son",
+  "PAGINATOR_LAST": "Son",
+  "PAGINATOR_NEXT": "Sonraki",
   "PAGINATOR_OF": "{0} - {1} / {2} gösteriliyor",
   "PAGINATOR_PER_PAGE": "Sayfa başına",
-  "PAGINATOR_PREV": "Önceki"
+  "PAGINATOR_PREV": "Önceki",
+  "FILTER": "Filtre",
+  "PLEASE_CONFIRM": "lütfen onaylayın",
+  "ARE_YOU_SURE": "bu kaydı silmek istediğinden emin misin?",
+  "CONFIRM": "onayla",
+  "CANCEL": "iptal",
+  "CREATE": "Oluşturmak",
+  "EDIT": "Düzenle",
+  "FIRST_NAME": "İsim",
+  "LAST_NAME": "Soyadı",
+  "BIRTH_DATE": "Doğum günü",
+  "PHONE_NUMBER": "Telefon numarası"
 }

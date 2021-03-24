@@ -26,10 +26,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
 import { MatMenuModule} from '@angular/material/menu';
-import { GridComponent } from './components/grid/grid.component';
 import { WaitingComponent } from './components/waiting/waiting.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { UserEditableDialogComponent } from './components/user-editable-dialog/user-editable-dialog.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +44,9 @@ import {MatTableModule} from '@angular/material/table';
     StringFormatPipe,
     TranslatePipe,
     HeaderComponent,
-    GridComponent,
-    WaitingComponent
+    WaitingComponent,
+    ConfirmDialogComponent,
+    UserEditableDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +66,8 @@ import {MatTableModule} from '@angular/material/table';
     MatMenuModule,
     MatPaginatorModule,
     MatTableModule,
+    MatSortModule,
+    MatDialogModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [

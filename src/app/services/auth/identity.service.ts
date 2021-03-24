@@ -26,7 +26,7 @@ export class IdentityService {
   }
 
   async login(model: any): Promise<OperationResult<IdentityViewModel>> {
-    const op = await this.httpService.mockPost<IdentityViewModel>(
+    const op = await this.httpService.mockData<IdentityViewModel>(
         '/login',
         model,
     );
@@ -43,7 +43,7 @@ export class IdentityService {
     if (!this.identity.token) {
       return Promise.resolve(OperationResult.Success(null));
     }
-    const op = await this.httpService.mockPost<ProfileViewModel>('/profile');
+    const op = await this.httpService.mockData<ProfileViewModel>('/profile');
     if (op.status === OperationResultStatus.Success) {
       this.profile = op.data;
     }
